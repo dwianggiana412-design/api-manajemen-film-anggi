@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const db = require('./db.js');  
 const bcrypt = require('bcryptjs');
-const { authenticateToken, authorizeRole } = require('./middleware/auth.js');
+const { authenticateToken, authorizeRole } = require('./middleware/middleware/auth.js');
 
 const app = express();
 const PORT = process.env.PORT || 3300;
